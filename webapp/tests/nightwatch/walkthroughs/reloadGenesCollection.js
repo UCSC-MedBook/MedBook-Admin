@@ -4,8 +4,27 @@ module.exports = {
       .url("http://localhost:3000/Admin")
       .resizeWindow(1024, 768).pause(1000)
       .reviewMainLayout()
+    ;
+
+    // make sure user exists and log in
+    client
+      .timeoutsAsyncScript(1000)
+      .executeAsync(function(data, done){
+        Accounts.createUser({
+          email: 'admin@medbook.ucsc.edu',
+          password: 'testing',
+          profile: {
+            collaborations: ['testing', 'admin']
+          }
+        }, done);
+      })
+      .executeAsync(function(data, done) {
+        Meteor.logout(done);
+      })
       .signIn("admin@medbook.ucsc.edu", "testing")
     ;
+
+
 
     // Add a gene file, add it
     var urlInput = "form#add-from-web-form input[name='urlInput']";
@@ -44,7 +63,11 @@ module.exports = {
       // run the job
       .click("#reload-genes-collection tbody > tr:nth-child(1) > td:nth-child(4) > button.run-job")
       .waitForElementNotPresent("#reload-genes-collection tbody > tr:nth-child(1) > td:nth-child(4) > button.run-job", 500)
+      .verify.containsText("#reload-genes-collection tbody > tr:nth-child(1) > th", "waiting")
       .verify.elementPresent("#reload-genes-collection tbody > tr:nth-child(1) > td:nth-child(4) > button.delete-job")
+
+      .waitForElementVisible("#reload-genes-collection tbody > tr:nth-child(1) > th.done", 10000)
+      .verify.containsText("#reload-genes-collection tbody > tr:nth-child(1) > td:nth-child(4)", "Genes created: 15")
 
     ;
 
