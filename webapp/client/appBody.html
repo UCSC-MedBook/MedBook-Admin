@@ -1,0 +1,28 @@
+<template name="appBody">
+  <div class="container">
+
+    <div id="top-controls">
+      <div id="left">
+        <ol class="breadcrumb">
+          <li class="active">Jobs</li>
+
+          <!-- {{#if compare getRouteName "editSubmission"}}
+            <li class="active">
+              <a href="{{pathFor 'listSubmissions'}}">Submissions</a>
+            </li>
+            <li class="active">Edit</li>
+          {{else}}
+
+          {{/if}} -->
+        </ol>
+      </div>
+      <div id="center">
+        {{> loginButtons }}
+      </div>
+    </div>
+
+    <hr />
+
+    {{> yield}}
+  </div>
+</template>
