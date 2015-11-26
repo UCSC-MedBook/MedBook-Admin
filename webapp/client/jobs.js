@@ -89,6 +89,7 @@ Template.jobRow.onCreated(function () {
 
 Template.jobRow.helpers({
   sinceDate: function () {
+    // TODO: make this refresh every now and then
     return moment(this.date_created).fromNow();
   },
   waitingOrCreating: function () {
@@ -116,6 +117,13 @@ Template.jobRow.events({
   },
   "click .delete-job": function (event, instance) {
     Jobs.remove(instance.data._id);
+  },
+  "click .cancel-job": function (event, instance) {
+    Jobs.update(instance.data._id, {
+      $set: {
+        status: "creating",
+      }
+    });
   },
 });
 

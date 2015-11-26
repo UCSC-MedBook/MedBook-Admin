@@ -1,0 +1,44 @@
+<template name="genesTesting">
+  <h1>This route is to show genes collection data</h1>
+
+  {{#if Template.subscriptionsReady}}
+    <div id="data">
+      {{#if count getGenes}}
+        <table class="table">
+          <thead>
+            <tr>
+              <th>gene_label</th>
+              <th>gene_name</th>
+              <th>previous_names</th>
+              <th>previous_labels</th>
+              <th>label_synonyms</th>
+              <th>name_synonymes</th>
+              <th>chromosome</th>
+              <th>hgnc_id</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each getGenes}}
+              <tr>
+                <td>{{checkUndefined gene_label}}</td>
+                <td>{{checkUndefined gene_name}}</td>
+                <td>{{checkUndefined previous_names}}</td>
+                <td>{{checkUndefined previous_labels}}</td>
+                <td>{{checkUndefined label_synonyms}}</td>
+                <td>{{checkUndefined name_synonymes}}</td>
+                <td>{{checkUndefined chromosome}}</td>
+                <td>{{checkUndefined hgnc_id}}</td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      {{else}}
+        No data
+      {{/if}}
+    </div>
+  {{else}}
+    <div class="relative-spinner">
+      {{> spinner}}
+    </div>
+  {{/if}}
+</template>

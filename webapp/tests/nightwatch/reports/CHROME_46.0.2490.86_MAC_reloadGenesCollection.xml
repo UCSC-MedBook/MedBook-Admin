@@ -5,9 +5,85 @@
 
   <testsuite name="reloadGenesCollection"
     errors="0" failures="0" hostname="" id="" package="reloadGenesCollection" skipped="0"
-    tests="1" time="0.000" timestamp="Wed, 25 Nov 2015 16:15:02 GMT">
+    tests="1" time="0.000" timestamp="Thu, 26 Nov 2015 01:11:47 GMT">
   
-    <testcase name="Reload genes collection" time="15.29" assertions="32">
+    <testcase name="Reload genes collection" time="33.15" assertions="70">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 

@@ -92,23 +92,32 @@
     <td>{{sinceDate}}</td>
     <td>{{args.blob_name}}</td>
     <td>
-      {{#if waitingOrCreating}}
-        {{#if compare status "creating"}}
-          <button
-              class="btn btn-xs btn-primary
-                  {{#if blobStored}}run-job{{else}}disabled{{/if}}"
-              title="{{#unless blobStored}}File not uploaded{{/unless}}">
-            <span class="glyphicon glyphicon-thumbs-up"></span>
-            Start
-          </button>
-        {{/if}}
+      {{#if compare status "creating"}}
+        <button class="btn btn-xs btn-primary
+                {{#if blobStored}}run-job{{else}}disabled{{/if}}"
+            title="{{#unless blobStored}}File not uploaded{{/unless}}">
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+          Start
+        </button>
+
         <button class="btn btn-xs btn-warning delete-job">
           <span class="glyphicon glyphicon-trash"></span>
           Delete
         </button>
+      {{/if}}
+
+      {{#if compare status "waiting"}}
+      <button class="btn btn-xs btn-warning cancel-job">
+        <span class="glyphicon glyphicon-cancel"></span>
+        Cancel
+      </button>
+      {{/if}}
+
+      {{#if waitingOrCreating}}
+
       {{else}}
         {{#if compare status "running"}}
-          too late now!
+          running...
         {{/if}}
 
         {{#if compare status "error"}}

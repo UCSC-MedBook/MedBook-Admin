@@ -13,4 +13,9 @@ Router.map(function() {
   this.route('jobs', {
     path: '/Admin/',
   });
+
+  // testing routes
+  this.route('genesTesting', {
+    path: '/Admin/testing/genesTesting'
+  });
 });
