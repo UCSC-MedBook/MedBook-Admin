@@ -101,7 +101,7 @@ module.exports = {
           "A1BGAS",
           "A1BG-AS"
         ],
-        "label_synonyms" : [
+        "synonym_labels" : [
           "FLJ23569"
         ],
         "chromosome" : "19q13.43",
@@ -116,11 +116,11 @@ module.exports = {
         "previous_labels" : [
             "A3GALT2P"
         ],
-        "label_synonyms" : [
+        "synonym_labels" : [
             "IGBS3S",
             "IGB3S"
         ],
-        "name_synonymes" : [
+        "synonym_names" : [
             "iGb3 synthase",
             "isoglobotriaosylceramide synthase"
         ],
@@ -139,7 +139,7 @@ module.exports = {
           "ABCB10P",
           "ABCB10P2"
         ],
-        "label_synonyms" : [
+        "synonym_labels" : [
           "M-ABC2",
           "MABC2"
         ],

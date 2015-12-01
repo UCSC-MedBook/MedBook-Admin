@@ -5,9 +5,9 @@
 
   <testsuite name="reloadGenesCollection"
     errors="0" failures="0" hostname="" id="" package="reloadGenesCollection" skipped="0"
-    tests="1" time="0.000" timestamp="Thu, 26 Nov 2015 01:11:47 GMT">
+    tests="1" time="0.000" timestamp="Mon, 30 Nov 2015 23:37:47 GMT">
   
-    <testcase name="Reload genes collection" time="33.15" assertions="70">
+    <testcase name="Reload genes collection" time="33.04" assertions="70">
 
     
 
