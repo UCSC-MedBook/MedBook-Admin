@@ -1,100 +1,100 @@
-HGNC ID	Approved Symbol	Approved Name	Status	Previous Symbols	Previous Name	Synonyms	Name Synonyms	Chromosome
-HGNC:5	A1BG	alpha-1-B glycoprotein	Approved					19q13.43
-HGNC:37133	A1BG-AS1	A1BG antisense RNA 1	Approved	NCRNA00181, A1BGAS, A1BG-AS	"non-protein coding RNA 181", "A1BG antisense RNA (non-protein coding)", "A1BG antisense RNA 1 (non-protein coding)"	FLJ23569		19q13.43
-HGNC:24086	A1CF	APOBEC1 complementation factor	Approved			ACF, ASP, ACF64, ACF65, APOBEC1CF		10q21.1
-HGNC:6	A1S9T~withdrawn	symbol withdrawn, see UBA1	Symbol Withdrawn					
-HGNC:7	A2M	alpha-2-macroglobulin	Approved			FWP007, S863-7, CPAMD5		12p13.31
-HGNC:27057	A2M-AS1	A2M antisense RNA 1 (head to head)	Approved		"A2M antisense RNA 1 (non-protein coding)", "A2M antisense RNA 1"			12p13.31
-HGNC:23336	A2ML1	alpha-2-macroglobulin-like 1	Approved	CPAMD9	"C3 and PZP-like, alpha-2-macroglobulin domain containing 9"	FLJ25179		12p13
-HGNC:41022	A2ML1-AS1	A2ML1 antisense RNA 1	Approved		"A2ML1 antisense RNA 1 (non-protein coding)"			12p13.31
-HGNC:41523	A2ML1-AS2	A2ML1 antisense RNA 2	Approved		"A2ML1 antisense RNA 2 (non-protein coding)"			12p13.31
-HGNC:8	A2MP1	alpha-2-macroglobulin pseudogene 1	Approved	A2MP	"alpha-2-macroglobulin pseudogene"			12p13.31
-HGNC:10	A2MRAP~withdrawn	symbol withdrawn, see LRPAP1	Symbol Withdrawn					
-HGNC:9	A2MR~withdrawn	symbol withdrawn, see LRP1	Symbol Withdrawn					
-HGNC:30005	A3GALT2	alpha 1,3-galactosyltransferase 2	Approved	A3GALT2P	"alpha 1,3-galactosyltransferase 2, pseudogene"	IGBS3S, IGB3S	"iGb3 synthase", "isoglobotriaosylceramide synthase"	1p35.1
-HGNC:18149	A4GALT	alpha 1,4-galactosyltransferase	Approved		"alpha 1,4-galactosyltransferase (globotriaosylceramide synthase, P blood group)"	A14GALT, Gb3S, P(k)	"Gb3 synthase", "CD77 synthase", "globotriaosylceramide synthase", "lactosylceramide 4-alpha-galactosyltransferase"	22q13.2
-HGNC:17968	A4GNT	alpha-1,4-N-acetylglucosaminyltransferase	Approved			alpha4GnT		3p14.3
-HGNC:1	A12M1~withdrawn	entry withdrawn	Entry Withdrawn					
-HGNC:2	A12M2~withdrawn	entry withdrawn	Entry Withdrawn					
-HGNC:3	A12M3~withdrawn	entry withdrawn	Entry Withdrawn					
-HGNC:4	A12M4~withdrawn	entry withdrawn	Entry Withdrawn					
-HGNC:13666	AAAS	achalasia, adrenocortical insufficiency, alacrimia	Approved		"achalasia, adrenocortical insufficiency, alacrimia (Allgrove, triple-A)"		"aladin", "Allgrove, triple-A", "adracalin"	12q13
-HGNC:12	AABT~withdrawn	entry withdrawn	Entry Withdrawn					
-HGNC:13	AAC1~withdrawn	symbol withdrawn, see NAT1	Symbol Withdrawn					
-HGNC:14	AAC2~withdrawn	symbol withdrawn, see NAT2	Symbol Withdrawn					
-HGNC:21298	AACS	acetoacetyl-CoA synthetase	Approved			FLJ12389, SUR-5, ACSF1	"acyl-CoA synthetase family member 1"	12q24.31
-HGNC:18226	AACSP1	acetoacetyl-CoA synthetase pseudogene 1	Approved	AACSL	"acetoacetyl-CoA synthetase-like"			5q35
-HGNC:13792	AACT~withdrawn	symbol withdrawn, see SERPINA3	Symbol Withdrawn					
-HGNC:17	AADAC	arylacetamide deacetylase	Approved		"arylacetamide deacetylase (esterase)"	DAC, CES5A1		3q25.1
-HGNC:24427	AADACL2	arylacetamide deacetylase-like 2	Approved			MGC72001		3q25.1
-HGNC:50301	AADACL2-AS1	AADACL2 antisense RNA 1	Approved					3q25.1
-HGNC:32037	AADACL3	arylacetamide deacetylase-like 3	Approved			OTTHUMG00000001887		1p36.21
-HGNC:32038	AADACL4	arylacetamide deacetylase-like 4	Approved			OTTHUMG00000001889		1p36.21
-HGNC:50305	AADACP1	arylacetamide deacetylase pseudogene 1	Approved					3q25.1
-HGNC:17929	AADAT	aminoadipate aminotransferase	Approved			KATII, KAT2	"kynurenine aminotransferase II", "L kynurenine/alpha aminoadipate aminotransferase"	4q33
-HGNC:16881	AAED1	AhpC/TSA antioxidant enzyme domain containing 1	Approved	C9orf21	"chromosome 9 open reading frame 21"			9q22.32
-HGNC:25662	AAGAB	alpha- and gamma-adaptin binding protein	Approved			FLJ11506, p34		15q23
-HGNC:19679	AAK1	AP2 associated kinase 1	Approved			KIAA1048, DKFZp686K16132		2p13.3
-HGNC:30205	AAMDC	adipogenesis associated, Mth938 domain containing	Approved	C11orf67	"chromosome 11 open reading frame 67"	PTD015, FLJ21035, CK067		11q14.1
-HGNC:18	AAMP	angio-associated migratory cell protein	Approved					2q
-HGNC:19	AANAT	aralkylamine N-acetyltransferase	Approved		"arylalkylamine N-acetyltransferase"	SNAT	"serotonin N-acetyltransferase"	17q25.1
-HGNC:15886	AAR2	AAR2 splicing factor homolog	Approved	C20orf4	"chromosome 20 open reading frame 4", "AAR2 splicing factor homolog (S. cerevisiae)"	bA234K24.2		20q11.23
-HGNC:33842	AARD	alanine and arginine rich domain containing protein	Approved	C8orf85	"chromosome 8 open reading frame 85"	LOC441376	"Alanine and arginine-rich domain-containing protein"	8q24.11
-HGNC:20	AARS	alanyl-tRNA synthetase	Approved			CMT2N	"alanine tRNA ligase 1, cytoplasmic"	16q22.1
-HGNC:21022	AARS2	alanyl-tRNA synthetase 2, mitochondrial	Approved	AARSL	"alanyl-tRNA synthetase like", "alanyl-tRNA synthetase 2, mitochondrial (putative)"	KIAA1270, bA444E17.1	"alanine tRNA ligase 2, mitochondrial"	6p21.1
-HGNC:28417	AARSD1	alanyl-tRNA synthetase domain containing 1	Approved			MGC2744		17q21.31
-HGNC:49894	AARSP1	alanyl-tRNA synthetase pseudogene 1	Approved					4q28.3
-HGNC:23993	AASDH	aminoadipate-semialdehyde dehydrogenase	Approved			NRPS998, LYS2, ACSF4	"acyl-CoA synthetase family member 4"	4q12
-HGNC:14235	AASDHPPT	aminoadipate-semialdehyde dehydrogenase-phosphopantetheinyl transferase	Approved			LYS5, CGI-80, AASD-PPT		11q22
-HGNC:17366	AASS	aminoadipate-semialdehyde synthase	Approved			LORSDH, LKRSDH		7q31.3
-HGNC:51526	AATBC	apoptosis associated transcript in bladder cancer	Approved				"apoptosis-associated transcript in bladder cancer"	21q22.3
-HGNC:19235	AATF	apoptosis antagonizing transcription factor	Approved			DED, CHE-1, CHE1, BFR2		17q12
-HGNC:21	AATK	apoptosis-associated tyrosine kinase	Approved			AATYK, KIAA0641, LMTK1, LMR1, AATYK1, PPP1R77	"lemur tyrosine kinase 1", "protein phosphatase 1, regulatory subunit 77"	17q25.3
-HGNC:40053	AATK-AS1	AATK antisense RNA 1	Approved		"AATK antisense RNA 1 (non-protein coding)"			17q25.3
-HGNC:22	AAVS1	adeno-associated virus integration site 1	Approved			AAV		19q13
-HGNC:11	AA~withdrawn	symbol withdrawn, see TEAD1	Symbol Withdrawn					
-HGNC:49667	ABALON	apoptotic BCL2L1-antisense long non-coding RNA	Approved			INXS	"apoptotic BCL-X-associated long ncRNA", "intronic BCL-XS-inducing lncRNA"	20q11.21
-HGNC:23	ABAT	4-aminobutyrate aminotransferase	Approved			GABAT	"4-aminobutyrate transaminase"	16p13.2
-HGNC:24	ABC1~withdrawn	symbol withdrawn, see ABCA1	Symbol Withdrawn					
-HGNC:25	ABC2~withdrawn	symbol withdrawn, see ABCA2	Symbol Withdrawn					
-HGNC:26	ABC3~withdrawn	symbol withdrawn, see ABCA3	Symbol Withdrawn					
-HGNC:28	ABC7~withdrawn	symbol withdrawn, see ABCB7	Symbol Withdrawn					
-HGNC:27	ABC50~withdrawn	symbol withdrawn, see ABCF1	Symbol Withdrawn					
-HGNC:29	ABCA1	ATP binding cassette subfamily A member 1	Approved	ABC1, HDLDT1	"ATP-binding cassette, sub-family A (ABC1), member 1"	TGD	"Tangier disease"	9q31
-HGNC:32	ABCA2	ATP binding cassette subfamily A member 2	Approved	ABC2	"ATP-binding cassette, sub-family A (ABC1), member 2"			9q34
-HGNC:33	ABCA3	ATP binding cassette subfamily A member 3	Approved	ABC3	"ATP-binding cassette, sub-family A (ABC1), member 3"	ABC-C, EST111653, LBM180		16p13.3
-HGNC:34	ABCA4	ATP binding cassette subfamily A member 4	Approved	STGD1, ABCR, RP19, STGD	"ATP-binding cassette transporter, retinal-specific", "ATP-binding cassette, sub-family A (ABC1), member 4"	FFM, ARMD2, CORD3	"Stargardt disease"	1p22
-HGNC:35	ABCA5	ATP binding cassette subfamily A member 5	Approved		"ATP-binding cassette, sub-family A (ABC1), member 5"	EST90625		17q24.3
-HGNC:36	ABCA6	ATP binding cassette subfamily A member 6	Approved		"ATP-binding cassette, sub-family A (ABC1), member 6"	EST155051		17q21
-HGNC:37	ABCA7	ATP binding cassette subfamily A member 7	Approved		"ATP-binding cassette, sub-family A (ABC1), member 7"	ABCX		19p13.3
-HGNC:38	ABCA8	ATP binding cassette subfamily A member 8	Approved		"ATP-binding cassette, sub-family A (ABC1), member 8"	KIAA0822		17q24
-HGNC:39	ABCA9	ATP binding cassette subfamily A member 9	Approved		"ATP-binding cassette, sub-family A (ABC1), member 9"	EST640918		17q24
-HGNC:39983	ABCA9-AS1	ABCA9 antisense RNA 1	Approved		"ABCA9 antisense RNA 1 (non-protein coding)"			17q24.2
-HGNC:30	ABCA10	ATP binding cassette subfamily A member 10	Approved		"ATP-binding cassette, sub-family A (ABC1), member 10"	EST698739		17q24
-HGNC:31	ABCA11P	ATP binding cassette subfamily A member 11, pseudogene	Approved	ABCA11	"ATP-binding cassette, sub-family A (ABC1), member 11, pseudogene"	EST1133530, FLJ14297		4p16.3
-HGNC:14637	ABCA12	ATP binding cassette subfamily A member 12	Approved	ICR2B	"ichthyosis congenita II, lamellar ichthyosis B", "ATP-binding cassette, sub-family A (ABC1), member 12"	DKFZP434G232, LI2		2q34
-HGNC:14638	ABCA13	ATP binding cassette subfamily A member 13	Approved		"ATP-binding cassette, sub-family A (ABC1), member 13"	FLJ33876, FLJ33951		7p12.3
-HGNC:32972	ABCA17P	ATP binding cassette subfamily A member 17, pseudogene	Approved		"ATP-binding cassette, sub-family A (ABC1), member 17, pseudogene"			16p13.3
-HGNC:40	ABCB1	ATP binding cassette subfamily B member 1	Approved	PGY1, MDR1, CLCS	"colchicin sensitivity", "ATP-binding cassette, sub-family B (MDR/TAP), member 1"	P-gp, CD243, GP170, ABC20	"multidrug resistance protein 1"	7q21.12
-HGNC:11563	ABCB2~withdrawn	symbol withdrawn, see TAP1	Symbol Withdrawn					
-HGNC:11564	ABCB3~withdrawn	symbol withdrawn, see TAP2	Symbol Withdrawn					
-HGNC:45	ABCB4	ATP binding cassette subfamily B member 4	Approved	PGY3, MDR3	"ATP-binding cassette, sub-family B (MDR/TAP), member 4"	MDR2, PFIC-3, GBD1		7q21
-HGNC:46	ABCB5	ATP binding cassette subfamily B member 5	Approved		"ATP-binding cassette, sub-family B (MDR/TAP), member 5"	EST422562, ABCB5beta, ABCB5alpha	"P-glycoprotein ABCB5", "ATP-binding cassette protein"	7p14
-HGNC:47	ABCB6	ATP binding cassette subfamily B member 6 (Langereis blood group)	Approved		"ATP-binding cassette, sub-family B (MDR/TAP), member 6", "ATP-binding cassette, sub-family B (MDR/TAP), member 6 (Langereis blood group)"	EST45597, umat, MTABC3	"ATP-binding cassette half-transporter"	2q36
-HGNC:48	ABCB7	ATP binding cassette subfamily B member 7	Approved	ABC7	"ATP-binding cassette, sub-family B (MDR/TAP), member 7"	EST140535, Atm1p, ASAT		Xq13.3
-HGNC:49	ABCB8	ATP binding cassette subfamily B member 8	Approved		"ATP-binding cassette, sub-family B (MDR/TAP), member 8"	EST328128, M-ABC1, MABC1	"mitochondrial ABC protein"	7q36.1
-HGNC:50	ABCB9	ATP binding cassette subfamily B member 9	Approved		"ATP-binding cassette, sub-family B (MDR/TAP), member 9"	EST122234		12q24
-HGNC:41	ABCB10	ATP binding cassette subfamily B member 10	Approved		"ATP-binding cassette, sub-family B (MDR/TAP), member 10"	EST20237, M-ABC2, MTABC2	"ATP-binding cassette sub-family B member 10, mitochondrial", "ATP-binding cassette transporter 10", "ABC transporter 10 protein", "mitochondrial ATP-binding cassette 2"	1q32
-HGNC:14114	ABCB10P1	ATP binding cassette subfamily B member 10 pseudogene 1	Approved	ABCB10P, ABCB10P2	"ATP-binding cassette, sub-family B (MDR/TAP), member 10 pseudogene", "ATP-binding cassette, sub-family B (MDR/TAP), member 10 pseudogene 2", "ATP-binding cassette, sub-family B (MDR/TAP), member 10 pseudogene 1"	M-ABC2, MABC2		15q11.2
-HGNC:31128	ABCB10P2~withdrawn	symbol withdrawn, see ABCB10P1	Symbol Withdrawn					
-HGNC:31129	ABCB10P3	ATP binding cassette subfamily B member 10 pseudogene 3	Approved		"ATP-binding cassette, sub-family B (MDR/TAP), member 10 pseudogene 3"			15q13.1
-HGNC:31130	ABCB10P4	ATP binding cassette subfamily B member 10 pseudogene 4	Approved		"ATP-binding cassette, sub-family B (MDR/TAP), member 10 pseudogene 4"			15q13.1
-HGNC:42	ABCB11	ATP binding cassette subfamily B member 11	Approved	BSEP, PFIC2	"progressive familial intrahepatic cholestasis 2", "bile salt export pump", "ATP-binding cassette, sub-family B (MDR/TAP), member 11"	ABC16, SPGP, PFIC-2, PGY4	"ABC member 16, MDR/TAP subfamily"	2q24
-HGNC:51	ABCC1	ATP binding cassette subfamily C member 1	Approved	MRP, MRP1	"multidrug resistance associated protein 1", "ATP-binding cassette, sub-family C (CFTR/MRP), member 1"	GS-X		16p13.1
-HGNC:53	ABCC2	ATP binding cassette subfamily C member 2	Approved	CMOAT	"canalicular multispecific organic anion transporter 1", "ATP-binding cassette, sub-family C (CFTR/MRP), member 2"	DJS, MRP2, cMRP		10q24
-HGNC:54	ABCC3	ATP binding cassette subfamily C member 3	Approved		"ATP-binding cassette, sub-family C (CFTR/MRP), member 3"	MRP3, cMOAT2, EST90757, MLP2, MOAT-D	"canalicular multispecific organic anion transporter 2"	17q21
-HGNC:55	ABCC4	ATP binding cassette subfamily C member 4	Approved		"ATP-binding cassette, sub-family C (CFTR/MRP), member 4"	MRP4, EST170205, MOAT-B, MOATB	"canalicular multispecific organic anion transporter (ABC superfamily)", "bA464I2.1 (ATP-binding cassette, sub-family C (CFTR/MRP), member 4)", "multidrug resistance-associated protein 4", "multispecific organic anion transporter B"	13q31
-HGNC:56	ABCC5	ATP binding cassette subfamily C member 5	Approved		"ATP-binding cassette, sub-family C (CFTR/MRP), member 5"	MRP5, SMRP, EST277145, MOAT-C		3q27
-HGNC:40055	ABCC5-AS1	ABCC5 antisense RNA 1	Approved		"ABCC5 antisense RNA 1 (non-protein coding)"			3q27.1
-HGNC:57	ABCC6	ATP binding cassette subfamily C member 6	Approved	ARA, PXE	"pseudoxanthoma elasticum", "ATP-binding cassette, sub-family C (CFTR/MRP), member 6"	MRP6, EST349056, MLP1, URG7		16p13.11
-HGNC:33352	ABCC6P1	ATP binding cassette subfamily C member 6 pseudogene 1 (functional)	Approved		"ATP-binding cassette, sub-family C, member 6 pseudogene 1", "ATP-binding cassette, sub-family C, member 6 pseudogene 1 (functional)"			16p12.3
+HGNC ID	Approved Symbol	Approved Name	Status	Locus Type	Locus Group	Previous Symbols	Previous Name	Synonyms	Name Synonyms	Chromosome
+HGNC:5	A1BG	alpha-1-B glycoprotein	Approved	gene with protein product	protein-coding gene					19q13.43
+HGNC:37133	A1BG-AS1	A1BG antisense RNA 1	Approved	RNA, long non-coding	non-coding RNA	NCRNA00181, A1BGAS, A1BG-AS	"non-protein coding RNA 181", "A1BG antisense RNA (non-protein coding)", "A1BG antisense RNA 1 (non-protein coding)"	FLJ23569		19q13.43
+HGNC:24086	A1CF	APOBEC1 complementation factor	Approved	gene with protein product	protein-coding gene			ACF, ASP, ACF64, ACF65, APOBEC1CF		10q21.1
+HGNC:6	A1S9T~withdrawn	symbol withdrawn, see UBA1	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:7	A2M	alpha-2-macroglobulin	Approved	gene with protein product	protein-coding gene			FWP007, S863-7, CPAMD5		12p13.31
+HGNC:27057	A2M-AS1	A2M antisense RNA 1 (head to head)	Approved	RNA, long non-coding	non-coding RNA		"A2M antisense RNA 1 (non-protein coding)", "A2M antisense RNA 1"			12p13.31
+HGNC:23336	A2ML1	alpha-2-macroglobulin-like 1	Approved	gene with protein product	protein-coding gene	CPAMD9	"C3 and PZP-like, alpha-2-macroglobulin domain containing 9"	FLJ25179		12p13
+HGNC:41022	A2ML1-AS1	A2ML1 antisense RNA 1	Approved	RNA, long non-coding	non-coding RNA		"A2ML1 antisense RNA 1 (non-protein coding)"			12p13.31
+HGNC:41523	A2ML1-AS2	A2ML1 antisense RNA 2	Approved	RNA, long non-coding	non-coding RNA		"A2ML1 antisense RNA 2 (non-protein coding)"			12p13.31
+HGNC:8	A2MP1	alpha-2-macroglobulin pseudogene 1	Approved	pseudogene	pseudogene	A2MP	"alpha-2-macroglobulin pseudogene"			12p13.31
+HGNC:10	A2MRAP~withdrawn	symbol withdrawn, see LRPAP1	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:9	A2MR~withdrawn	symbol withdrawn, see LRP1	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:30005	A3GALT2	alpha 1,3-galactosyltransferase 2	Approved	gene with protein product	protein-coding gene	A3GALT2P	"alpha 1,3-galactosyltransferase 2, pseudogene"	IGBS3S, IGB3S	"iGb3 synthase", "isoglobotriaosylceramide synthase"	1p35.1
+HGNC:18149	A4GALT	alpha 1,4-galactosyltransferase	Approved	gene with protein product	protein-coding gene		"alpha 1,4-galactosyltransferase (globotriaosylceramide synthase, P blood group)"	A14GALT, Gb3S, P(k)	"Gb3 synthase", "CD77 synthase", "globotriaosylceramide synthase", "lactosylceramide 4-alpha-galactosyltransferase"	22q13.2
+HGNC:17968	A4GNT	alpha-1,4-N-acetylglucosaminyltransferase	Approved	gene with protein product	protein-coding gene			alpha4GnT		3p14.3
+HGNC:1	A12M1~withdrawn	entry withdrawn	Entry Withdrawn	withdrawn	withdrawn					
+HGNC:2	A12M2~withdrawn	entry withdrawn	Entry Withdrawn	withdrawn	withdrawn					
+HGNC:3	A12M3~withdrawn	entry withdrawn	Entry Withdrawn	withdrawn	withdrawn					
+HGNC:4	A12M4~withdrawn	entry withdrawn	Entry Withdrawn	withdrawn	withdrawn					
+HGNC:13666	AAAS	achalasia, adrenocortical insufficiency, alacrimia	Approved	gene with protein product	protein-coding gene		"achalasia, adrenocortical insufficiency, alacrimia (Allgrove, triple-A)"		"aladin", "Allgrove, triple-A", "adracalin"	12q13
+HGNC:12	AABT~withdrawn	entry withdrawn	Entry Withdrawn	withdrawn	withdrawn					
+HGNC:13	AAC1~withdrawn	symbol withdrawn, see NAT1	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:14	AAC2~withdrawn	symbol withdrawn, see NAT2	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:21298	AACS	acetoacetyl-CoA synthetase	Approved	gene with protein product	protein-coding gene			FLJ12389, SUR-5, ACSF1	"acyl-CoA synthetase family member 1"	12q24.31
+HGNC:18226	AACSP1	acetoacetyl-CoA synthetase pseudogene 1	Approved	pseudogene	pseudogene	AACSL	"acetoacetyl-CoA synthetase-like"			5q35
+HGNC:13792	AACT~withdrawn	symbol withdrawn, see SERPINA3	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:17	AADAC	arylacetamide deacetylase	Approved	gene with protein product	protein-coding gene		"arylacetamide deacetylase (esterase)"	DAC, CES5A1		3q25.1
+HGNC:24427	AADACL2	arylacetamide deacetylase-like 2	Approved	gene with protein product	protein-coding gene			MGC72001		3q25.1
+HGNC:50301	AADACL2-AS1	AADACL2 antisense RNA 1	Approved	RNA, long non-coding	non-coding RNA					3q25.1
+HGNC:32037	AADACL3	arylacetamide deacetylase-like 3	Approved	gene with protein product	protein-coding gene			OTTHUMG00000001887		1p36.21
+HGNC:32038	AADACL4	arylacetamide deacetylase-like 4	Approved	gene with protein product	protein-coding gene			OTTHUMG00000001889		1p36.21
+HGNC:50305	AADACP1	arylacetamide deacetylase pseudogene 1	Approved	pseudogene	pseudogene					3q25.1
+HGNC:17929	AADAT	aminoadipate aminotransferase	Approved	gene with protein product	protein-coding gene			KATII, KAT2	"kynurenine aminotransferase II", "L kynurenine/alpha aminoadipate aminotransferase"	4q33
+HGNC:16881	AAED1	AhpC/TSA antioxidant enzyme domain containing 1	Approved	gene with protein product	protein-coding gene	C9orf21	"chromosome 9 open reading frame 21"			9q22.32
+HGNC:25662	AAGAB	alpha- and gamma-adaptin binding protein	Approved	gene with protein product	protein-coding gene			FLJ11506, p34		15q23
+HGNC:19679	AAK1	AP2 associated kinase 1	Approved	gene with protein product	protein-coding gene			KIAA1048, DKFZp686K16132		2p13.3
+HGNC:30205	AAMDC	adipogenesis associated, Mth938 domain containing	Approved	gene with protein product	protein-coding gene	C11orf67	"chromosome 11 open reading frame 67"	PTD015, FLJ21035, CK067		11q14.1
+HGNC:18	AAMP	angio-associated migratory cell protein	Approved	gene with protein product	protein-coding gene					2q
+HGNC:19	AANAT	aralkylamine N-acetyltransferase	Approved	gene with protein product	protein-coding gene		"arylalkylamine N-acetyltransferase"	SNAT	"serotonin N-acetyltransferase"	17q25.1
+HGNC:15886	AAR2	AAR2 splicing factor homolog	Approved	gene with protein product	protein-coding gene	C20orf4	"chromosome 20 open reading frame 4", "AAR2 splicing factor homolog (S. cerevisiae)"	bA234K24.2		20q11.23
+HGNC:33842	AARD	alanine and arginine rich domain containing protein	Approved	gene with protein product	protein-coding gene	C8orf85	"chromosome 8 open reading frame 85"	LOC441376	"Alanine and arginine-rich domain-containing protein"	8q24.11
+HGNC:20	AARS	alanyl-tRNA synthetase	Approved	gene with protein product	protein-coding gene			CMT2N	"alanine tRNA ligase 1, cytoplasmic"	16q22.1
+HGNC:21022	AARS2	alanyl-tRNA synthetase 2, mitochondrial	Approved	gene with protein product	protein-coding gene	AARSL	"alanyl-tRNA synthetase like", "alanyl-tRNA synthetase 2, mitochondrial (putative)"	KIAA1270, bA444E17.1	"alanine tRNA ligase 2, mitochondrial"	6p21.1
+HGNC:28417	AARSD1	alanyl-tRNA synthetase domain containing 1	Approved	gene with protein product	protein-coding gene			MGC2744		17q21.31
+HGNC:49894	AARSP1	alanyl-tRNA synthetase pseudogene 1	Approved	pseudogene	pseudogene					4q28.3
+HGNC:23993	AASDH	aminoadipate-semialdehyde dehydrogenase	Approved	gene with protein product	protein-coding gene			NRPS998, LYS2, ACSF4	"acyl-CoA synthetase family member 4"	4q12
+HGNC:14235	AASDHPPT	aminoadipate-semialdehyde dehydrogenase-phosphopantetheinyl transferase	Approved	gene with protein product	protein-coding gene			LYS5, CGI-80, AASD-PPT		11q22
+HGNC:17366	AASS	aminoadipate-semialdehyde synthase	Approved	gene with protein product	protein-coding gene			LORSDH, LKRSDH		7q31.3
+HGNC:51526	AATBC	apoptosis associated transcript in bladder cancer	Approved	RNA, long non-coding	non-coding RNA				"apoptosis-associated transcript in bladder cancer"	21q22.3
+HGNC:19235	AATF	apoptosis antagonizing transcription factor	Approved	gene with protein product	protein-coding gene			DED, CHE-1, CHE1, BFR2		17q12
+HGNC:21	AATK	apoptosis-associated tyrosine kinase	Approved	gene with protein product	protein-coding gene			AATYK, KIAA0641, LMTK1, LMR1, AATYK1, PPP1R77	"lemur tyrosine kinase 1", "protein phosphatase 1, regulatory subunit 77"	17q25.3
+HGNC:40053	AATK-AS1	AATK antisense RNA 1	Approved	RNA, long non-coding	non-coding RNA		"AATK antisense RNA 1 (non-protein coding)"			17q25.3
+HGNC:22	AAVS1	adeno-associated virus integration site 1	Approved	virus integration site	other			AAV		19q13
+HGNC:11	AA~withdrawn	symbol withdrawn, see TEAD1	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:49667	ABALON	apoptotic BCL2L1-antisense long non-coding RNA	Approved	RNA, long non-coding	non-coding RNA			INXS	"apoptotic BCL-X-associated long ncRNA", "intronic BCL-XS-inducing lncRNA"	20q11.21
+HGNC:23	ABAT	4-aminobutyrate aminotransferase	Approved	gene with protein product	protein-coding gene			GABAT	"4-aminobutyrate transaminase"	16p13.2
+HGNC:24	ABC1~withdrawn	symbol withdrawn, see ABCA1	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:25	ABC2~withdrawn	symbol withdrawn, see ABCA2	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:26	ABC3~withdrawn	symbol withdrawn, see ABCA3	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:28	ABC7~withdrawn	symbol withdrawn, see ABCB7	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:27	ABC50~withdrawn	symbol withdrawn, see ABCF1	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:29	ABCA1	ATP binding cassette subfamily A member 1	Approved	gene with protein product	protein-coding gene	ABC1, HDLDT1	"ATP-binding cassette, sub-family A (ABC1), member 1"	TGD	"Tangier disease"	9q31
+HGNC:32	ABCA2	ATP binding cassette subfamily A member 2	Approved	gene with protein product	protein-coding gene	ABC2	"ATP-binding cassette, sub-family A (ABC1), member 2"			9q34
+HGNC:33	ABCA3	ATP binding cassette subfamily A member 3	Approved	gene with protein product	protein-coding gene	ABC3	"ATP-binding cassette, sub-family A (ABC1), member 3"	ABC-C, EST111653, LBM180		16p13.3
+HGNC:34	ABCA4	ATP binding cassette subfamily A member 4	Approved	gene with protein product	protein-coding gene	STGD1, ABCR, RP19, STGD	"ATP-binding cassette transporter, retinal-specific", "ATP-binding cassette, sub-family A (ABC1), member 4"	FFM, ARMD2, CORD3	"Stargardt disease"	1p22
+HGNC:35	ABCA5	ATP binding cassette subfamily A member 5	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family A (ABC1), member 5"	EST90625		17q24.3
+HGNC:36	ABCA6	ATP binding cassette subfamily A member 6	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family A (ABC1), member 6"	EST155051		17q21
+HGNC:37	ABCA7	ATP binding cassette subfamily A member 7	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family A (ABC1), member 7"	ABCX		19p13.3
+HGNC:38	ABCA8	ATP binding cassette subfamily A member 8	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family A (ABC1), member 8"	KIAA0822		17q24
+HGNC:39	ABCA9	ATP binding cassette subfamily A member 9	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family A (ABC1), member 9"	EST640918		17q24
+HGNC:39983	ABCA9-AS1	ABCA9 antisense RNA 1	Approved	RNA, long non-coding	non-coding RNA		"ABCA9 antisense RNA 1 (non-protein coding)"			17q24.2
+HGNC:30	ABCA10	ATP binding cassette subfamily A member 10	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family A (ABC1), member 10"	EST698739		17q24
+HGNC:31	ABCA11P	ATP binding cassette subfamily A member 11, pseudogene	Approved	pseudogene	pseudogene	ABCA11	"ATP-binding cassette, sub-family A (ABC1), member 11, pseudogene"	EST1133530, FLJ14297		4p16.3
+HGNC:14637	ABCA12	ATP binding cassette subfamily A member 12	Approved	gene with protein product	protein-coding gene	ICR2B	"ichthyosis congenita II, lamellar ichthyosis B", "ATP-binding cassette, sub-family A (ABC1), member 12"	DKFZP434G232, LI2		2q34
+HGNC:14638	ABCA13	ATP binding cassette subfamily A member 13	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family A (ABC1), member 13"	FLJ33876, FLJ33951		7p12.3
+HGNC:32972	ABCA17P	ATP binding cassette subfamily A member 17, pseudogene	Approved	pseudogene	pseudogene		"ATP-binding cassette, sub-family A (ABC1), member 17, pseudogene"			16p13.3
+HGNC:40	ABCB1	ATP binding cassette subfamily B member 1	Approved	gene with protein product	protein-coding gene	PGY1, MDR1, CLCS	"colchicin sensitivity", "ATP-binding cassette, sub-family B (MDR/TAP), member 1"	P-gp, CD243, GP170, ABC20	"multidrug resistance protein 1"	7q21.12
+HGNC:11563	ABCB2~withdrawn	symbol withdrawn, see TAP1	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:11564	ABCB3~withdrawn	symbol withdrawn, see TAP2	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:45	ABCB4	ATP binding cassette subfamily B member 4	Approved	gene with protein product	protein-coding gene	PGY3, MDR3	"ATP-binding cassette, sub-family B (MDR/TAP), member 4"	MDR2, PFIC-3, GBD1		7q21
+HGNC:46	ABCB5	ATP binding cassette subfamily B member 5	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family B (MDR/TAP), member 5"	EST422562, ABCB5beta, ABCB5alpha	"P-glycoprotein ABCB5", "ATP-binding cassette protein"	7p14
+HGNC:47	ABCB6	ATP binding cassette subfamily B member 6 (Langereis blood group)	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family B (MDR/TAP), member 6", "ATP-binding cassette, sub-family B (MDR/TAP), member 6 (Langereis blood group)"	EST45597, umat, MTABC3	"ATP-binding cassette half-transporter"	2q36
+HGNC:48	ABCB7	ATP binding cassette subfamily B member 7	Approved	gene with protein product	protein-coding gene	ABC7	"ATP-binding cassette, sub-family B (MDR/TAP), member 7"	EST140535, Atm1p, ASAT		Xq13.3
+HGNC:49	ABCB8	ATP binding cassette subfamily B member 8	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family B (MDR/TAP), member 8"	EST328128, M-ABC1, MABC1	"mitochondrial ABC protein"	7q36.1
+HGNC:50	ABCB9	ATP binding cassette subfamily B member 9	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family B (MDR/TAP), member 9"	EST122234		12q24
+HGNC:41	ABCB10	ATP binding cassette subfamily B member 10	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family B (MDR/TAP), member 10"	EST20237, M-ABC2, MTABC2	"ATP-binding cassette sub-family B member 10, mitochondrial", "ATP-binding cassette transporter 10", "ABC transporter 10 protein", "mitochondrial ATP-binding cassette 2"	1q32
+HGNC:14114	ABCB10P1	ATP binding cassette subfamily B member 10 pseudogene 1	Approved	pseudogene	pseudogene	ABCB10P, ABCB10P2	"ATP-binding cassette, sub-family B (MDR/TAP), member 10 pseudogene", "ATP-binding cassette, sub-family B (MDR/TAP), member 10 pseudogene 2", "ATP-binding cassette, sub-family B (MDR/TAP), member 10 pseudogene 1"	M-ABC2, MABC2		15q11.2
+HGNC:31128	ABCB10P2~withdrawn	symbol withdrawn, see ABCB10P1	Symbol Withdrawn	withdrawn	withdrawn					
+HGNC:31129	ABCB10P3	ATP binding cassette subfamily B member 10 pseudogene 3	Approved	pseudogene	pseudogene		"ATP-binding cassette, sub-family B (MDR/TAP), member 10 pseudogene 3"			15q13.1
+HGNC:31130	ABCB10P4	ATP binding cassette subfamily B member 10 pseudogene 4	Approved	pseudogene	pseudogene		"ATP-binding cassette, sub-family B (MDR/TAP), member 10 pseudogene 4"			15q13.1
+HGNC:42	ABCB11	ATP binding cassette subfamily B member 11	Approved	gene with protein product	protein-coding gene	BSEP, PFIC2	"progressive familial intrahepatic cholestasis 2", "bile salt export pump", "ATP-binding cassette, sub-family B (MDR/TAP), member 11"	ABC16, SPGP, PFIC-2, PGY4	"ABC member 16, MDR/TAP subfamily"	2q24
+HGNC:51	ABCC1	ATP binding cassette subfamily C member 1	Approved	gene with protein product	protein-coding gene	MRP, MRP1	"multidrug resistance associated protein 1", "ATP-binding cassette, sub-family C (CFTR/MRP), member 1"	GS-X		16p13.1
+HGNC:53	ABCC2	ATP binding cassette subfamily C member 2	Approved	gene with protein product	protein-coding gene	CMOAT	"canalicular multispecific organic anion transporter 1", "ATP-binding cassette, sub-family C (CFTR/MRP), member 2"	DJS, MRP2, cMRP		10q24
+HGNC:54	ABCC3	ATP binding cassette subfamily C member 3	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family C (CFTR/MRP), member 3"	MRP3, cMOAT2, EST90757, MLP2, MOAT-D	"canalicular multispecific organic anion transporter 2"	17q21
+HGNC:55	ABCC4	ATP binding cassette subfamily C member 4	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family C (CFTR/MRP), member 4"	MRP4, EST170205, MOAT-B, MOATB	"canalicular multispecific organic anion transporter (ABC superfamily)", "bA464I2.1 (ATP-binding cassette, sub-family C (CFTR/MRP), member 4)", "multidrug resistance-associated protein 4", "multispecific organic anion transporter B"	13q31
+HGNC:56	ABCC5	ATP binding cassette subfamily C member 5	Approved	gene with protein product	protein-coding gene		"ATP-binding cassette, sub-family C (CFTR/MRP), member 5"	MRP5, SMRP, EST277145, MOAT-C		3q27
+HGNC:40055	ABCC5-AS1	ABCC5 antisense RNA 1	Approved	RNA, long non-coding	non-coding RNA		"ABCC5 antisense RNA 1 (non-protein coding)"			3q27.1
+HGNC:57	ABCC6	ATP binding cassette subfamily C member 6	Approved	gene with protein product	protein-coding gene	ARA, PXE	"pseudoxanthoma elasticum", "ATP-binding cassette, sub-family C (CFTR/MRP), member 6"	MRP6, EST349056, MLP1, URG7		16p13.11
+HGNC:33352	ABCC6P1	ATP binding cassette subfamily C member 6 pseudogene 1 (functional)	Approved	pseudogene	pseudogene		"ATP-binding cassette, sub-family C, member 6 pseudogene 1", "ATP-binding cassette, sub-family C, member 6 pseudogene 1 (functional)"			16p12.3

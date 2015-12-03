@@ -2,7 +2,7 @@ module.exports = {
   "Reload genes collection": function (client) {
     client
       .url("http://localhost:3000/Admin")
-      .resizeWindow(1024, 768).pause(1000)
+      .resizeWindow(1024, 768).pause(2000)
       .reviewMainLayout()
     ;
 
@@ -86,6 +86,8 @@ module.exports = {
           "gene_label" : "A1BG",
           "gene_name" : "alpha-1-B glycoprotein",
           "chromosome" : "19q13.43",
+          locus_type: "gene with protein product",
+          locus_group: "protein-coding gene",
           "hgnc_id" : "HGNC:5"
       })
       .reviewGenes(2, {
@@ -105,6 +107,8 @@ module.exports = {
           "FLJ23569"
         ],
         "chromosome" : "19q13.43",
+        locus_type: "RNA, long non-coding",
+        locus_group: "non-coding RNA",
         "hgnc_id" : "HGNC:37133"
       })
       .reviewGenes(10, {
@@ -125,6 +129,8 @@ module.exports = {
             "isoglobotriaosylceramide synthase"
         ],
         "chromosome" : "1p35.1",
+        locus_type: "gene with protein product",
+        locus_group: "protein-coding gene",
         "hgnc_id" : "HGNC:30005"
       })
       .reviewGenes(62, {
@@ -144,6 +150,8 @@ module.exports = {
           "MABC2"
         ],
         "chromosome" : "15q11.2",
+        locus_type: "pseudogene",
+        locus_group: "pseudogene",
         "hgnc_id" : "HGNC:14114"
       })
       .verify.elementNotPresent('#data > table > tbody > tr:nth-child(80)')
