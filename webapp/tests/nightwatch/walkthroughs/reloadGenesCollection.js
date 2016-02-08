@@ -14,7 +14,7 @@ module.exports = {
           email: 'admin@medbook.ucsc.edu',
           password: 'testing',
           profile: {
-            collaborations: ['testing', 'admin']
+            collaborations: ['testing', 'Admin']
           }
         }, done);
       })
@@ -32,18 +32,18 @@ module.exports = {
         .verify.elementPresent("#reload-genes-collection .insert-file-button input[type=file]") // left button
         // right button
         .assert.elementPresent('#reload-genes-collection .insert-file-button input[name="urlInput"]')
-        .assert.elementPresent("#reload-genes-collection .insert-file-button #add-from-web-form")
+        .assert.elementPresent("#reload-genes-collection .insert-file-button .add-from-web")
     ;
 
     // check to see what happens with a missing column
-    var urlInput = "form#add-from-web-form input[name='urlInput']";
+    var urlInput = "#reload-genes-collection .add-from-web input[name='urlInput']";
     client
       .clearValue(urlInput)
       .setValue(urlInput, "http://localhost:3000/HGNC_missing_column.tsv")
-      .click("#reload-genes-collection #add-from-web-form button[type='submit']")
-      .waitForElementVisible("#reload-genes-collection tbody > tr:nth-child(1) > td:nth-child(4) > button.run-job", 1000)
+      .click("#reload-genes-collection .add-from-web button[type='submit']")
+      .waitForElementVisible("#reload-genes-collection tbody > tr:nth-child(1) > td:nth-child(4) > button.run-job", 10000)
       .click("#reload-genes-collection tbody > tr:nth-child(1) > td:nth-child(4) > button.run-job")
-      .waitForElementPresent("#reload-genes-collection tbody > tr:nth-child(1) > th.error", 10000)
+      .waitForElementPresent("#reload-genes-collection tbody > tr:nth-child(1) > th.error", 20000)
       .verify.containsText("#reload-genes-collection tbody > tr:nth-child(1) > th", "error")
       .verify.containsText("#reload-genes-collection > table > tbody > tr:nth-child(1) > td:nth-child(4)", "Stack trace")
     ;
@@ -53,7 +53,7 @@ module.exports = {
       .assert.elementNotPresent('#reload-genes-collection .delete-job')
       .clearValue(urlInput)
       .setValue(urlInput, "http://localhost:3000/HGNC_first_100.tsv")
-      .click("#reload-genes-collection #add-from-web-form button[type='submit']")
+      .click("#reload-genes-collection .add-from-web button[type='submit']")
       .waitForElementVisible("button.run-job", 1000)
       .verify.value(urlInput, "")
       .verify.containsText("#reload-genes-collection tbody > tr:nth-child(1) > th", "creating")
@@ -67,7 +67,7 @@ module.exports = {
       .verify.elementNotPresent("#reload-genes-collection tbody > tr:nth-child(1) > td:nth-child(4) > button.run-job")
       .clearValue(urlInput)
       .setValue(urlInput, "http://localhost:3000/HGNC_first_100.tsv")
-      .click("#reload-genes-collection #add-from-web-form button[type='submit']")
+      .click("#reload-genes-collection .add-from-web button[type='submit']")
       .waitForElementVisible("button.run-job", 1000)
 
       // run the job
@@ -76,7 +76,7 @@ module.exports = {
       .verify.containsText("#reload-genes-collection tbody > tr:nth-child(1) > th", "waiting")
       .verify.elementPresent("#reload-genes-collection tbody > tr:nth-child(1) > td:nth-child(4) > button.cancel-job")
 
-      .waitForElementVisible("#reload-genes-collection tbody > tr:nth-child(1) > th.done", 10000)
+      .waitForElementVisible("#reload-genes-collection tbody > tr:nth-child(1) > th.done", 20000)
       .verify.containsText("#reload-genes-collection tbody > tr:nth-child(1) > td:nth-child(4)", "Genes created: 79")
 
       // make sure the data are there
@@ -157,7 +157,57 @@ module.exports = {
       .verify.elementNotPresent('#data > table > tbody > tr:nth-child(80)')
     ;
 
+    // add a transcript mapping file, run it, then check the output
+    urlInput = "#add-transcript-mapping .add-from-web input[name='urlInput']";
+    client
+      .url("http://localhost:3000/Admin")
+      .waitForElementVisible(urlInput, 1000)
+      .clearValue(urlInput)
+      .setValue(urlInput, "http://localhost:3000/transcript_mappings.tsv")
+      .click("#add-transcript-mapping .add-from-web button[type='submit']")
+      .waitForElementVisible("button.run-job", 1000)
+      .click("button.run-job")
+      .waitForElementVisible("#add-transcript-mapping tbody > tr:nth-child(1) > th.done", 20000) // wait to be done
+      .verify.containsText("#add-transcript-mapping tbody > tr:nth-child(1) > td:nth-child(4)", "Transcripts mapped: 6")
+      .verify.containsText("#add-transcript-mapping tbody > tr:nth-child(1) > td:nth-child(4)", "Transcripts unable to map (genes don't exist): 2")
 
+      // make sure the data's there
+      .url('http://localhost:3000/Admin/testing/genesTesting')
+      .waitForElementVisible("#data > table > tbody > tr:nth-child(79)", 5000)
+      .pause(1000)
+      .reviewGenes(1, {
+        "gene_label" : "A1BG",
+        "gene_name" : "alpha-1-B glycoprotein",
+        "chromosome" : "19q13.43",
+        "locus_type" : "gene with protein product",
+        "locus_group" : "protein-coding gene",
+        "hgnc_id" : "HGNC:5",
+        "status" : "Approved",
+        "gene" : "A1BG",
+        "transcripts" : "[uc002qsd.4],[uc002qsf.2]" // NOTE: after transformation
+      })
+      .reviewGenes(62, {
+        "gene_label" : "ABCB10P1",
+        "gene_name" : "ATP binding cassette subfamily B member 10 pseudogene 1",
+        "previous_names" : [
+          "ATP-binding cassette, sub-family B (MDR/TAP), member 10 pseudogene",
+          "ATP-binding cassette, sub-family B (MDR/TAP), member 10 pseudogene 2",
+          "ATP-binding cassette, sub-family B (MDR/TAP), member 10 pseudogene 1"
+        ],
+        "previous_labels" : [
+          "ABCB10P",
+          "ABCB10P2"
+        ],
+        "synonym_labels" : [
+          "M-ABC2",
+          "MABC2"
+        ],
+        "chromosome" : "15q11.2",
+        locus_type: "pseudogene",
+        locus_group: "pseudogene",
+        "hgnc_id" : "HGNC:14114"
+      })
+    ;
 
     client.end();
   },

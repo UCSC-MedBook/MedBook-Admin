@@ -20,4 +20,12 @@ Template.genesTesting.helpers({
     }
     return text;
   },
+  convertTranscriptArray: function (array) {
+    if (array === undefined) {
+      return 'undefined';
+    }
+    return _.map(array, function (transcript) {
+      return "[" + transcript.label + "." + transcript.version + "]";
+    });
+  }
 });

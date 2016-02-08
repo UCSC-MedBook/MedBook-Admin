@@ -3,7 +3,7 @@
 
   {{#if Template.subscriptionsReady}}
     <div id="data">
-      {{#if count getGenes}}
+      {{#if length getGenes}}
         <table class="table">
           <thead>
             <tr>
@@ -14,6 +14,9 @@
               <th>synonym_labels</th>
               <th>synonym_names</th>
               <th>chromosome</th>
+              <th>transcripts</th>
+              <th>locus_type</th>
+              <th>locus_group</th>
               <th>hgnc_id</th>
             </tr>
           </thead>
@@ -27,6 +30,7 @@
                 <td>{{checkUndefined synonym_labels}}</td>
                 <td>{{checkUndefined synonym_names}}</td>
                 <td>{{checkUndefined chromosome}}</td>
+                <td>{{convertTranscriptArray transcripts}}</td>
                 <td>{{checkUndefined locus_type}}</td>
                 <td>{{checkUndefined locus_group}}</td>
                 <td>{{checkUndefined hgnc_id}}</td>

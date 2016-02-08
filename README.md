@@ -9,7 +9,13 @@ Accounts.createUser({
   email: 'admin@medbook.ucsc.edu',
   password: 'testing',
   profile: {
-    collaborations: ['testing', 'admin']
+    collaborations: ['testing', 'Admin']
   }
 });
 ```
+
+Transcript mapping file downloaded from:
+http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/kgXref.txt.gz
+
+HGNC file downloaded from:
+TODO

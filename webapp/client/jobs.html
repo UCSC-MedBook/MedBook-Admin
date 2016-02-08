@@ -2,6 +2,9 @@
   <div class="container">
     <h1>Jobs monitor</h1>
 
+    {{! TODO: swap these back}}
+    {{> addTranscriptMapping}}
+
     {{> reloadGenesCollection}}
 
     {{! TODO: figure out a place to put this}}
@@ -12,33 +15,37 @@
 <template name="reloadGenesCollection">
   <div id="reload-genes-collection" class="panel panel-default">
     <!-- Default panel contents -->
-    <div class="panel-heading">Reload genes collection jobs</div>
+    <div class="panel-heading">Reload genes collection</div>
     <div class="panel-body">
-      <p>Upload a new gene definition file or insert a file from a URL.</p>
-      {{> uploadNewFiles}}
-
-      {{#unless count getJobs}}
-        <p>You have never reloaded the genes collection</p>
-      {{/unless}}
+      <p>
+        Upload a new gene definition file or insert a file from a URL.
+      </p>
+      <p>
+        Note that when you reload the genes collection, all isoform mappings
+        have to be reloaded.
+      </p>
+      {{> uploadNewFiles "ReloadGenesCollection"}}
     </div>
 
-    {{#if count getJobs}}
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Status</th>
-            <th>Created date</th>
-            <th>File name</th>
-            <th>Actions/Output</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{#each getJobs}}
-            {{> jobRow}}
-          {{/each}}
-        </tbody>
-      </table>
-    {{/if}}
+    {{> jobsTable "ReloadGenesCollection"}}
+  </div>
+</template>
+
+<template name="addTranscriptMapping">
+  <div id="add-transcript-mapping" class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Add transcript mappings to genes collection</div>
+    <div class="panel-body">
+      <p>
+        Upload a new transcript mapping file or insert a file from a URL.
+      </p>
+      <p>
+        These will have to be rerun when you reload the genes collection.
+      </p>
+      {{> uploadNewFiles "GeneTranscriptMappings"}}
+    </div>
+
+    {{> jobsTable "GeneTranscriptMappings"}}
   </div>
 </template>
 
@@ -50,13 +57,13 @@
       <div class="col-md-6 insert-file-button">
         <span class="btn btn-default btn-file fill-width">
           Upload local files
-          <input id="upload-files-input" type="file" multiple>
+          <input class="upload-files-input" type="file" multiple>
         </span>
       </div>
 
       {{! add from the web}}
       <div class="col-md-6 insert-file-button">
-        <form id="add-from-web-form">
+        <form class="add-from-web">
           <div class="input-group">
             <input name="urlInput" type="text" class="form-control"
                 placeholder="Enter URL">
@@ -72,19 +79,29 @@
   </div>
 </template>
 
-<!-- <template name="runJobs">
-  <div class="well">
-    <div class="row">
-      <span id="checkGeneExpression" class="col-sm-6 btn btn-default btn-file">
-        Check gene exprssion
-      </span>
-
-      <span id="convertToExpression2" class="col-sm-6 btn btn-default btn-file">
-        Convert gene_expression to expression2
-      </span>
+<template name="jobsTable">
+  {{#if length getJobs}}
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Status</th>
+          <th>Created date</th>
+          <th>File name</th>
+          <th>Actions/Output</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each getJobs}}
+          {{> jobRow}}
+        {{/each}}
+      </tbody>
+    </table>
+  {{else}}
+    <div class="panel-body">
+      <p>No jobs.</p>
     </div>
-  </div>
-</template> -->
+  {{/if}}
+</template>
 
 <template name="jobRow">
   <tr>
@@ -95,7 +112,7 @@
       {{#if compare status "creating"}}
         <button class="btn btn-xs btn-primary
                 {{#if blobStored}}run-job{{else}}disabled{{/if}}"
-            title="{{#unless blobStored}}File not uploaded{{/unless}}">
+            title="{{#unless blobStored}}File not fully uploaded{{/unless}}">
           <span class="glyphicon glyphicon-thumbs-up"></span>
           Start
         </button>
@@ -113,9 +130,7 @@
       </button>
       {{/if}}
 
-      {{#if waitingOrCreating}}
-
-      {{else}}
+      {{#unless waitingOrCreating}}
         {{#if compare status "running"}}
           running...
         {{/if}}
@@ -134,13 +149,39 @@
         {{/if}}
 
         {{#if compare status "done"}}
-          <span>Genes created: {{output.genes_created}}</span>
+          {{! TODO: figure out another way to do this :)}}
+          {{#if output.genesCreated}}
+            <p>Genes created: {{output.genesCreated}}</p>
+          {{/if}}
+
+          {{#if output.transcriptsMapped}}
+            <p>Transcripts mapped: {{output.transcriptsMapped}}</p>
+          {{/if}}
+
+          {{#if output.unableToMap}}
+            <p>Transcripts unable to map (genes don't exist): {{output.unableToMap}}</p>
+          {{/if}}
         {{/if}}
-      {{/if}}
+
+        {{#if errorOrDone}}
+          <button class="rerun-job btn btn-xs btn-warning">
+            <span class="glyphicon glyphicon-refresh"></span>
+            Rerun
+          </button>
+        {{/if}}
+      {{/unless}}
     </td>
   </tr>
 </template>
 
+
+
+
+
+
+
+
+<!-- Not used currently -->
 <template name="jobsHelp">
   <div class="panel panel-default">
     <!-- Default panel contents -->

@@ -1,31 +1,12 @@
-// Template.reloadGenesCollection
-
-Template.reloadGenesCollection.onCreated(function () {
-  var instance = this;
-
-  instance.subscribe("jobsByName", "ReloadGenesCollection");
-});
-
-Template.reloadGenesCollection.helpers({
-  getJobs: function () {
-    return Jobs.find({
-      name: "ReloadGenesCollection"
-    }, {
-      sort: { date_created: -1 }
-    });
-  },
-});
-
 // Template.uploadNewFiles
 
-// defined out here because it's used in two helpers
-// (_.partial used within the functions)
-function blobsInsertCallback (error, fileObject) {
+// defined out here because it's to be _.partial-ed per instance
+function blobsInsertCallback (jobName, error, fileObject) {
   if (error) {
     console.log("error:", error);
   } else {
     Jobs.insert({
-      name: "ReloadGenesCollection",
+      name: jobName,
       user_id: Meteor.userId(),
       args: {
         blob_id: fileObject._id,
@@ -36,10 +17,17 @@ function blobsInsertCallback (error, fileObject) {
   }
 }
 
+Template.uploadNewFiles.onCreated(function () {
+  var instance = this;
+
+  instance.blobsInsertCallback = _.partial(blobsInsertCallback,
+      instance.data);
+});
+
 // NOTE: this is puleld almost directly from Wrangler
 Template.uploadNewFiles.events({
   // when they actually select a file
-  "change #upload-files-input": function (event, instance) {
+  "change .upload-files-input": function (event, instance) {
     event.preventDefault();
 
     var files = event.target.files;
@@ -51,11 +39,11 @@ Template.uploadNewFiles.events({
       };
 
       // insertion is supposed to happen on the client
-      Blobs.insert(newFile, blobsInsertCallback);
+      Blobs.insert(newFile, instance.blobsInsertCallback);
     }
   },
   // add a URL from tbe web
-  "submit #add-from-web-form": function (event, instance) {
+  "submit form.add-from-web": function (event, instance) {
     event.preventDefault();
 
     var urlInput = event.target.urlInput;
@@ -71,11 +59,29 @@ Template.uploadNewFiles.events({
             "user_id": Meteor.userId(),
             "uploaded": true,
           };
-          Blobs.insert(newFile, blobsInsertCallback);
+          Blobs.insert(newFile, instance.blobsInsertCallback);
           urlInput.value = "";
         }
       });
     }
+  },
+});
+
+// Template.jobsTable
+
+Template.jobsTable.onCreated(function () {
+  var instance = this;
+
+  instance.subscribe("jobsByName", instance.data);
+});
+
+Template.jobsTable.helpers({
+  getJobs: function () {
+    return Jobs.find({
+      name: Template.instance().data,
+    }, {
+      sort: { date_created: -1 }
+    });
   },
 });
 
@@ -100,10 +106,13 @@ Template.jobRow.helpers({
   },
   blobStored: function () {
     // TODO: add this to the Meteor method starting the job run
-    var blob = Blobs.findOne(Template.instance().data.args.blob_id);
+    var blob = Blobs.findOne(this.args.blob_id);
     if (blob) {
       return blob.hasStored("blobs");
     }
+  },
+  errorOrDone: function () {
+    return this.status === "done" || this.status === "error";
   },
 });
 
@@ -123,6 +132,14 @@ Template.jobRow.events({
       $set: {
         status: "creating",
       }
+    });
+  },
+  "click .rerun-job": function (event, instance) {
+    Jobs.insert({
+      name: instance.data.name,
+      user_id: Meteor.userId(),
+      args: instance.data.args,
+      status: "creating",
     });
   },
 });
